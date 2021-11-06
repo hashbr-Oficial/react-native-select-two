@@ -6,7 +6,7 @@
 
 ## Add it to your project
 
-1. Insall package
+1. Install package
    - Using NPM
      `npm install react-native-select-two`
    - or:
