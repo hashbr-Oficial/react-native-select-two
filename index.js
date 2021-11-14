@@ -104,9 +104,10 @@ class Select2 extends Component {
     keyExtractor = (item, idx) => idx.toString();
     renderItem = ({ item, idx }) => {
         let { colorTheme, isSelectSingle } = this.props;
+        let key = isSelectSingle ? idx : idx[0];
         return (
             <TouchableOpacity
-                key={idx}
+                key={key}
                 onPress={() => this.onItemSelected(item, isSelectSingle)}
                 activeOpacity={0.7}
                 style={styles.itemWrapper}>
